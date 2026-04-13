@@ -25,27 +25,17 @@ Local preview (any static server):
 
 No build step. No dependencies. No `npm install`.
 
-## Contact form → Sean's email
+## Contact form
 
 The form on `/contact.html` uses **Netlify Forms** (the `data-netlify="true"`
-attribute + hidden `form-name` field). Submissions land in the Netlify
-dashboard automatically.
+attribute + hidden `form-name` field). Every submission captures into
+the Netlify dashboard — check it under **Forms → contact** whenever
+you want to review new leads.
 
-**One-time setup** after the first deploy:
-
-1. Open the Netlify site dashboard
-2. Navigate to **Site settings → Forms → Form notifications**
-3. Click **Add notification** → **Email notification**
-4. Set:
-   - Event: `New form submission`
-   - Form: `contact`
-   - Email to notify: `sbedard@cleanmoneycorporation.com`
-5. Save
-
-After that, every submission pushes an email to Sean. Until that's set,
-submissions still capture in the dashboard — nothing is lost.
-
-Optional: add a secondary notification for Ken at `kdeibel@cleanmoneycorporation.com`.
+No email notifications are configured — Ken/Sean pull submissions
+directly from the dashboard on demand. If that ever changes, Netlify
+supports email notifications under Site settings → Forms → Form
+notifications.
 
 ## Branding
 

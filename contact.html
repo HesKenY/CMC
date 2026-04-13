@@ -45,14 +45,10 @@
 <section class="section">
   <div class="container" style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start;">
     <!--
-      Netlify forms: adding data-netlify="true" + the hidden form-name
-      field registers the form with Netlify on first deploy. Submissions
-      land in the Netlify dashboard. Email routing to Sean's address is
-      configured in the Netlify dashboard:
-        Site settings → Forms → Form notifications → Add notification
-        → Email → Field: email of recipient: sbedard@cleanmoneycorporation.com
-      That's a one-time click. Until it's configured, submissions still
-      capture in the dashboard and nothing is lost.
+      Netlify forms: data-netlify="true" + hidden form-name registers
+      this form on first deploy. Submissions capture into the Netlify
+      dashboard under Forms → contact. No email notifications — Ken/
+      Sean pull submissions from the dashboard directly.
     -->
     <form
       class="contact-form"
@@ -98,7 +94,7 @@
       <textarea id="message" name="message" placeholder="Tell us a bit about your crew and what you're trying to fix."></textarea>
 
       <button class="btn" type="submit">Send message</button>
-      <div class="note">Goes straight to sbedard@cleanmoneycorporation.com — usually replied within one business day.</div>
+      <div class="note">We read every message and reply within one business day.</div>
     </form>
 
     <!-- ── Direct contact column ── -->

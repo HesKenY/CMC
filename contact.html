@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Clean Money Corporation</title>
+<meta name="description" content="Get in touch with Clean Money Corporation. Book a demo, ask a question, or just say hi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="icon" href="/assets/cmc-logo-transparent.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo-wrap">
+      <img src="/assets/cmc-logo-transparent.png" alt="Clean Money Corporation">
+      <span class="brand">CLEAN MONEY<br><small>CORPORATION</small></span>
+    </a>
+    <nav class="nav">
+      <a href="/ace.html">Product</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/contact.html" class="btn">Get a demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══ HERO ══════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Let's talk.</h1>
+    <p class="lead">
+      Fill out the form and Sean will get back to you within one
+      business day. We're two people, so you'll talk to an owner — not
+      a sales rep.
+    </p>
+  </div>
+</section>
+
+<!-- ══ CONTACT GRID ══════════════════════════════════════ -->
+<section class="section">
+  <div class="container" style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start;">
+    <!--
+      Netlify forms: adding data-netlify="true" + the hidden form-name
+      field registers the form with Netlify on first deploy. Submissions
+      land in the Netlify dashboard. Email routing to Sean's address is
+      configured in the Netlify dashboard:
+        Site settings → Forms → Form notifications → Add notification
+        → Email → Field: email of recipient: sbedard@cleanmoneycorporation.com
+      That's a one-time click. Until it's configured, submissions still
+      capture in the dashboard and nothing is lost.
+    -->
+    <form
+      class="contact-form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/thanks.html"
+    >
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+
+      <label for="name">Your name</label>
+      <input id="name" type="text" name="name" required placeholder="Jane Foreman">
+
+      <label for="email">Work email</label>
+      <input id="email" type="email" name="email" required placeholder="jane@crewco.com">
+
+      <label for="company">Company</label>
+      <input id="company" type="text" name="company" placeholder="Crew Co. Construction">
+
+      <label for="crew-size">Crew size</label>
+      <select id="crew-size" name="crew_size">
+        <option value="">Select…</option>
+        <option>1–10 workers</option>
+        <option>11–25 workers</option>
+        <option>26–50 workers</option>
+        <option>51–100 workers</option>
+        <option>100+ workers</option>
+      </select>
+
+      <label for="interest">What brings you here?</label>
+      <select id="interest" name="interest">
+        <option value="">Select…</option>
+        <option>Book a demo</option>
+        <option>Ask about pricing</option>
+        <option>Enterprise / multi-crew</option>
+        <option>Partnership / reseller</option>
+        <option>Just looking</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us a bit about your crew and what you're trying to fix."></textarea>
+
+      <button class="btn" type="submit">Send message</button>
+      <div class="note">Goes straight to sbedard@cleanmoneycorporation.com — usually replied within one business day.</div>
+    </form>
+
+    <!-- ── Direct contact column ── -->
+    <div>
+      <h2 style="font-size:22px;">Or reach us directly.</h2>
+      <p style="margin-bottom:26px;">Prefer email? Send a note to either of us.</p>
+
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:14px;">
+        <div style="font-size:12px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">Sales &amp; demos</div>
+        <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Sean Bedard</div>
+        <a href="mailto:sbedard@cleanmoneycorporation.com" style="font-size:14px;">sbedard@cleanmoneycorporation.com</a>
+      </div>
+
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:14px;">
+        <div style="font-size:12px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">Product &amp; engineering</div>
+        <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Ken Deibel</div>
+        <a href="mailto:kdeibel@cleanmoneycorporation.com" style="font-size:14px;">kdeibel@cleanmoneycorporation.com</a>
+      </div>
+
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;">
+        <div style="font-size:12px;color:var(--text-3);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">Company</div>
+        <div style="font-weight:700;color:var(--ink);margin-bottom:4px;">Clean Money Corporation</div>
+        <div style="font-size:13px;color:var(--text-2);">A US-registered S-corporation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <img src="/assets/cmc-logo-transparent.png" alt="Clean Money Corporation">
+      <p>Clean Money Corporation builds field software construction crews actually open. Honestly priced, offline-first, built by people who've held a shovel.</p>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <a href="/ace.html">How it works</a>
+      <a href="/ace.html#pricing">Pricing</a>
+      <a href="/contact.html">Get a demo</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:kdeibel@cleanmoneycorporation.com">kdeibel@</a>
+      <a href="mailto:sbedard@cleanmoneycorporation.com">sbedard@</a>
+      <span style="color:#64748b;font-size:12px;">cleanmoneycorporation.com</span>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 Clean Money Corporation. All rights reserved.</span>
+      <span>An S-corporation registered in the United States.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
